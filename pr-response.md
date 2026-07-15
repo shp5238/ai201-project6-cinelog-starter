@@ -6,6 +6,7 @@ AI-generated drafts as starting points for Comments 4 and 5. I reviewed those
 drafts against CineLog's community context and existing collection behavior,
 then retained the public-default and newest-first positions while explicitly
 acknowledging their privacy and browsing tradeoffs.
+Lastly, I used AI to help polish this document for final publishing. 
 
 ## Comment 1 — Rename
 **What I did:** I renamed `save_to_watchlist()` to `add_to_watchlist()` in `services/watchlist_service.py` so it follows the project's `verb_to_noun` naming convention. I also updated the import and function call in `routes/watchlist/watchlist.py`.
@@ -71,3 +72,6 @@ Manual testing:
 7. Confirm that the saved film appears and entries are ordered newest first.
 8. Try adding the same film again and confirm that the duplicate is rejected.
 9. Run `.venv/bin/python -m pytest tests/ -v`.
+
+## Commit History
+![Conventional commit history](images/git-log.png)
